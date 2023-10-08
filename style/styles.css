@@ -1,0 +1,436 @@
+/* Reset some default styles */
+/* Style the circular profile picture */
+
+/* Style the About Me section */
+#about {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; /* Vertically center align content */
+}
+
+/* Style the About Me image */
+#about img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Let the height adjust proportionally */
+    border: 2px solid #333;
+    border-radius: 50%; /* Create a circular image */
+    object-fit: cover;
+    margin-right: 20px; /* Add spacing between image and text */
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/* Style the About Me text */
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+/* Style the About Me image */
+#about img {
+    max-width: 100%; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Should match width for a perfect circle */
+    background-color: #333; /* Background color for the circular area */
+    border-radius: 50%; /* Creates a circular shape */
+    overflow: hidden; /* Hides any content outside the circle */
+}
+
+.profile-picture img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 80%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header and navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style the mobile menu */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+/* Style the sections */
+section {
+    padding: 40px;
+}
+
+/* Add more CSS styling as needed */
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+/* Style the containing <div> */
+#typewritter {
+    text-align: center; /* Center-align the content horizontally */
+    padding: 20px; /* Add padding for spacing inside the <div> */
+    margin-top: 20px; /* Add spacing above the <div> */
+    margin-bottom: 20px; /* Add spacing below the <div> */
+    margin-left: 20px; /* Add horizontal spacing to the left of the <div> */
+    margin-right: 20px; /* Add horizontal spacing to the right of the <div> */
+    background-color: #f5f5f5; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle lift effect */
+    margin: 0 auto; /* Center the <div> horizontally on the page */
+    width: 80%; /* Adjust the width as needed */
+    max-width: 500px; /* Maximum width to prevent it from getting too wide */
+}
+
+/* Style the <p> element inside the <div> */
+#Welcome_Intro {
+    font-size: 18px; /* Adjust the font size */
+    font-style: italic; /* Make the text italic */
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Add padding for spacing inside the <p> */
+}
+
+#date-time {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Styles for the work experience items */
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-item h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.date {
+    color: #777;
+    font-style: italic;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+
+/* Style the section */
+#WorkExperience {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif; /* Change the font family here */
+    line-height: 1.6; /* Add line-height for spacing between lines */
+}
+
+/* Style the experience items */
+.experience-item {
+    margin-bottom: 20px;
+    border-left: 4px solid #007BFF;
+    padding-left: 10px;
+}
+
+.experience-item h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.date {
+    color: #777;
+    font-style: italic;
+}
+
+/* Style the nested lists */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+/* Style the education section */
+#Education {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+}
+
+/* Style the education items */
+.education-item {
+    margin-bottom: 20px;
+}
+
+.education-item h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.institution {
+    color: #007BFF; /* Adjust color for the institution name if needed */
+}
+
+.date {
+    color: #777;
+    font-style: italic;
+}
+
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+}
+
+/* Style the Projects and Publications sections */
+#Projects,
+#Publications {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.project-item,
+.publication-item {
+    margin-bottom: 20px;
+}
+
+.project-item h3,
+.publication-item h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.date {
+    color: #777;
+    font-style: italic;
+}
+
+/* Additional styling can be added to further customize the appearance */
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+/* Style the close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #555;
+    background-color: #f0f0f0; /* Add a background color */
+    border-radius: 50%; /* Rounded shape */
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Hover effect for the close button */
+.close:hover {
+    background-color: #e0e0e0; /* Change the background color on hover */
+    color: #333; /* Change the text color on hover */
+}
+
+
+/* Style the PDF iframe */
+#pdfViewer {
+    width: 100%; /* Set the width to 100% to fill the modal's width */
+    height: 600px; /* Set the height to 80% of the viewport height (adjust as needed) */
+    border: none;
+}
+
+/* Style the PDF link with an emoji */
+a {
+    display: inline-flex;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+a .emoji {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+
+

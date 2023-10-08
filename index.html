@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Software Developer Portfolio</title>
+    <link rel="stylesheet" href="style/styles.css">
+     <link rel="icon" type="image/png" href="resources/fevi.png">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">Tarak Potturi</div>
+        <p id="date-time"></p> <!-- Placeholder for time and date -->
+        <ul class="nav-links">
+            <li><a href="#WorkExperience">Work Experience</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Projects">Projects</a></li>
+        </ul>
+        <div class="burger" onclick="toggleMenu()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+</header>
+
+<br>
+
+<div id="typewritter">
+    <p id="Welcome_Intro"></p>
+</div>
+
+<br>
+
+<section id="about">
+    <div> </div>
+
+    <img src="resources/Tarak.JPG" alt="Your Name's Image">
+    <p>
+        I'm a Java developer with a strong focus on designing and building data pipelines, and I bring a unique blend of technical expertise and experience in tax filings and transmission to the table. My passion lies in creating efficient, scalable, and resilient data processing solutions. With a keen eye for detail, I ensure data quality and reliability, enabling businesses to make informed decisions and unlock the value hidden within their data. My previous experience in tax filings and transmission has equipped me with a deep understanding of data security, compliance, and the critical importance of accurate financial data. Collaborative by nature, I thrive in cross-functional teams, where I apply my expertise to integrate, process, and transform data from diverse sources. With each project, I aim to streamline data workflows, optimize performance, and drive data-driven innovation while maintaining the highest standards of data security and accuracy.
+    </p>
+</section>
+
+<section id="WorkExperience">
+    <h2>Work Experience</h2>
+    <br>
+    <!-- Add your project descriptions and links here -->
+    <div class="experience-item">
+        <h3>Software Engineer - Reltio, Inc</h3>
+        <p class="date">September 2023 - Present</p>
+        <br>
+        <ul>
+            <li>Java Developer at Next-Generation Master Data Management
+                <ul>
+                    <li>Developing next generation connectors for the analytical tools.</li>
+                    <li>Collaborated with Product Managers (PMs) to gather requirements and ensure timely project delivery.</li>
+                    <li>Engineering the data pipelines for data flow to the downstream applications.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <h3>Associate Software Engineer - ADP India</h3>
+        <p class="date">June 2022 - September 2023</p>
+        <br>
+        <ul>
+            <li>Java Developer at Next-Generation Tax System
+                <ul>
+                    <li>Developed and maintained web applications and microservices using Java, Spring, Oracle SQL, and ORM.</li>
+                    <li>Collaborated with Business Analysts (BSAs) and Project Managers (PMs) to gather requirements and ensure timely project delivery.</li>
+                    <li>Re-engineered modules and implemented enhancements to meet the business requirements of tax agencies.</li>
+                </ul>
+            </li>
+            <li>Integration with Tax Agencies
+                <ul>
+                    <li>Developed functionality to process acknowledgments received from North American tax agencies using Apache Kafka.</li>
+                    <li>Implemented APIs for file transfers within the server to support production processes.</li>
+                </ul>
+            </li>
+            <li>Production Support and Troubleshooting
+                <ul>
+                    <li>Analyzed logs through Splunk to resolve end-to-end process issues in tax document transmission.</li>
+                    <li>Assisted in reproducing scenarios and testing functionalities for team members.</li>
+                    <li>Extensively involved in production support, debugging, and quick issue resolution using IntelliJ.</li>
+                    <li>Provided support for critical production systems, ensuring high availability and reliability through hotfix releases.</li>
+                    <li>Conducted root cause analysis for production issues and implemented preventive measures.</li>
+                </ul>
+            </li>
+            <li>Utilized Agile Methodology
+                <ul>
+                    <li>Followed Agile methodology to deliver high-quality software products on time.</li>
+                </ul>
+            </li>
+            <li>Document Archival
+                <ul>
+                    <li>Implemented a retry mechanism that significantly reduced archival failures of tax documents.</li>
+                    <li>Developed an alert mechanism for archival failures to promptly address issues.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="Education">
+    <h2><i>Education</i></h2>
+    <br>
+    <div class="education-item">
+        <h3>Master of Technology in Computer Science</h3>
+        <p class="institution">University of Hyderabad, An Institution of Eminence</p>
+        <p class="date">Graduated in September, 2022</p>
+    </div>
+
+    <div class="education-item">
+        <h3>Bachelor of Technology in Computer Science & Engineering</h3>
+        <p class="institution">Jawaharlal Nehru Technological University, Anantapur</p>
+        <p class="date">Graduated in October, 2020</p>
+    </div>
+</section>
+
+<!-- Project Section -->
+<section id="Projects">
+    <h2><i>Projects</i></h2>
+    <br>
+    <div class="project-item">
+        <h3>Ensembled Machine Learning Techniques for DDoS Detection in Software Defined Network</h3>
+        <p class="date">Completed in June 2022</p>
+        <br>
+        <p><b>Description:</b> To detect the DDoS attacks in SDN with improved accuracy using an ensemble approach. We applied feature
+            selection algorithms to select the best features and generated a custom dataset that focuses on improving the accuracy of
+            finding the attack.</p>
+        <p><b>Contribution:</b> Improved performance accuracy to 99.9% and prepared an own dataset having a list of features needed
+            for classification.</p>
+    </div>
+</section>
+
+<!-- Publications Section -->
+<section id="Publications">
+    <h2><i>Publications</i></h2>
+    <br>
+    <div class="publication-item">
+        <h3>Ensembled Machine Learning Techniques for DDoS Detection in SDN</h3>
+        <p class="date">In Proceedings of ICACECS 2022 <br> <br><a href="#" onclick="openModal('resources/ICACECS2022_Paper_ID_322.pdf')"><span class="emoji">&#x1F4C4;</span> View PDF</a></p>
+    </div>
+</section>
+
+<!-- Your portfolio content -->
+
+<!-- The modal -->
+<div id="pdfModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <iframe id="pdfViewer" src="" frameborder="0"></iframe>
+    </div>
+</div>
+
+<!-- JavaScript to control the modal -->
+<script>
+    // Function to open the modal and load the PDF
+    function openModal(pdfSrc) {
+        var modal = document.getElementById("pdfModal");
+        var pdfViewer = document.getElementById("pdfViewer");
+        pdfViewer.src = pdfSrc;
+        modal.style.display = "block";
+    }
+
+    // Function to close the modal
+    function closeModal() {
+        var modal = document.getElementById("pdfModal");
+        modal.style.display = "none";
+    }
+</script>
+
+<!-- Your other HTML content -->
+
+
+<footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <h4>Contact Me</h4>
+            <p>Email: potturitarak@gmail.com</p>
+            <p>Phone: +91 9493486734</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2023 Tarak Potturi
+    </div>
+</footer>
+
+
+<script src="script/script.js"></script>
+</body>
+</html>
